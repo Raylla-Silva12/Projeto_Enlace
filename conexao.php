@@ -41,8 +41,8 @@
 
 
 			// _-_ DELETANDO ATIVIDADES NO BANCO DE DADOS _-_ \\
- 	function DelEvent($cdAtv){
- 		$envio = "DELETE FROM etividade WHERE CDATIVIDADE = $cdAtv";
+ 	function DelAtv($cdAtv){
+ 		$envio = "DELETE FROM TB_ATIVIDADE WHERE CDATIVIDADE = $cdAtv";
  		$resultado = $conexao->query($envio);
 
 		if($resultado){
@@ -53,7 +53,7 @@
 		}
  	}
 			// _-_ LISTANDO ATIVIDADES NO BANCO DE DADOS _-_ \\
- 	function ListEvent(){
+ 	function ListAtv(){
  		$envio = "SELECT * FROM TB_ATIVIDADE";
  		$resultado = $conexao->query($envio);
 
