@@ -3,6 +3,7 @@
 <a href="conexao.php"></a>
 
 <?php
+    include("conexao.php");
     if($_POST){
         //CAD - CNPJ\\
         $NmFant = $_POST[''];
@@ -30,6 +31,6 @@
 
     cadEmpresa($NmFant, $CNPJ, $BairroCNPJ, $EnderecoCNPJ, $NumeroCNPJ, $ComplementoCNPJ, $ReferenciaCNPJ, $TelCNPJ, $Tel2CNPJ, $EmailCNPJ);
 
-    cadEvt($NmEvt, $DtEvt, $DescricaoEvt, $BairroEvt, $EnderecoEvt, $NumeroEvt, $ComplementoEvt, $ReferenciaEvt, $TelEvt, $Tel2Evt, $EmailEvt);
+    cadEvt($NmEvt, $DtEvt, $DescricaoEvt, $BairroEvt, $EnderecoEvt, $NumeroEvt, $ComplementoEvt, $ReferenciaEvt, $TelEvt, $Tel2Evt, $EmailEvt,$_SESSION['cdcnpj']);
 }
 ?>

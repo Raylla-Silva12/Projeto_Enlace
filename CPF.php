@@ -1,8 +1,9 @@
 <meta charset="utf-8">
 
-<a href="conexao.php"></a>
+
 
 <?php
+	include("conexao.php");
     if($_POST){
      	//CAD - PESSOA\\
      	$Nome = $_POST[''];
@@ -31,6 +32,6 @@
 
     cadPessoa($Nome, $CPF, $DtNasc, $BairroCPF, $EnderecoCPF, $NumeroCPF, $ComplementoCPF, $ReferenciaCPF, $TelCPF, $Tel2CPF, $EmailCPF);
 
-    cadAtv ($NmAtv, $DtAtv, $DescricaoAtv, $BairroAtv, $EnderecoAtv, $NumeroAtv, $ComplementoAtv, $ReferenciaAtv, $TelAtv, $Tel2Atv, $EmailAtv);
+    cadAtv ($NmAtv, $DtAtv, $DescricaoAtv, $BairroAtv, $EnderecoAtv, $NumeroAtv, $ComplementoAtv, $ReferenciaAtv, $TelAtv, $Tel2Atv, $EmailAtv, $_SESSION['cdcpf']);
 }
 ?>
