@@ -1,2 +1,2 @@
-# Projeto_Enlace
-Projeto em grupo.
+# Projeto_Enlace_Hackaton
+Projeto: site de turismo Itanhaém.
